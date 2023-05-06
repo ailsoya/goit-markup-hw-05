@@ -543,7 +543,7 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box:hover .overlay {
+.box:hover .overlay, .box:focus .overlay {
     transform: translateY(0);
 }
 
