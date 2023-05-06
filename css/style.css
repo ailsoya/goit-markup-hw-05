@@ -53,6 +53,9 @@ body {
     line-height: 1.5;
     font-weight: 500;
     letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link {
@@ -68,6 +71,9 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .inadd:hover, .inadd:focus {
@@ -90,10 +96,14 @@ body {
     border-radius: 4px;
     margin-left: auto;
     margin-right: auto;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .but:hover, .but:focus {
     background-color: var(--link-cont);
+    
 }
 
 .ulbutton {
@@ -117,6 +127,9 @@ body {
     letter-spacing: 0.04em;
     border: 1px solid var(--border);
     border-radius: 4px;
+    transition-property: color, background-color, border, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter:hover, .filter:focus {
@@ -145,6 +158,9 @@ body {
 
 .portfolio:hover, .portfolio:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sect-title {
@@ -358,6 +374,9 @@ body {
     align-items: center;
     justify-content: center;
     color: #8e8f99;
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .firm-link:hover, .firm-link:focus {
@@ -384,6 +403,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-link:hover, .media-link:focus {
@@ -498,6 +520,9 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .net:hover, .net:focus {
