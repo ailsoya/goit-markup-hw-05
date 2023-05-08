@@ -47,23 +47,36 @@ body {
     margin-right: auto;
 }
 
-.innav {
-    color: #404bbf;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .link {
     text-decoration: none;
 }
 
+.innav {
+    position: relative;
+    color: var(--spanny);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .innav:hover, .innav:focus, .innav:active {
     color: var(--link-cont);
+}
+
+.innav:hover::after {
+    width: 100%;
+}
+
+.innav::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 0%;
+    height: 4px;
+    background-color: var(--link-cont);
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .inadd {
@@ -71,9 +84,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .inadd:hover, .inadd:focus {
@@ -209,6 +220,7 @@ body {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    color: var(--link);
     text-transform: uppercase;
     margin-right: 76px;
     padding-top: 24px;
